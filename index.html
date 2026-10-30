@@ -3,88 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شرکت فیلم‌سازی گریفین پیکچر | Griffin Picture</title>
+  <title>Mohsen Rabiei | محسن ربیعی - Griffin Picture</title>
   
-  <meta name="description" content="استودیو و شرکت تولید فیلم و پروژه‌های تصویری و سینمایی Griffin Picture">
+  <meta name="description" content="وب‌سایت رسمی محسن ربیعی؛ کارگردان، نویسنده و تهیه‌کننده سینما و مدیر شرکت فیلم‌سازی Griffin Picture">
   <meta name="robots" content="index, follow">
 
-  <!-- کدهای Schema Markup برای ثبت هویت رسمی در گوگل -->
+  <!-- کدهای ساختاریافته رسمی (Schema JSON-LD) برای ثبت کامل در گراف دانش گوگل -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MovieStudio",
-    "name": "Griffin Picture",
-    "alternateName": "گریفین پیکچر",
-    "description": "استودیوی رسمی تولید فیلم، مستند و جلوه‌های بصری گریفین پیکچر",
-    "email": "griffinpictures.co@gmail.com",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+98-21-00000000",
-      "contactType": "customer support",
-      "email": "griffinpictures.co@gmail.com"
-    },
-    "sameAs": [
-      "https://www.instagram.com/",
-      "https://www.linkedin.com/",
-      "https://www.imdb.com/"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://griffinpicture.github.io/griffinpicture/#person",
+        "name": "Mohsen Rabiei",
+        "alternateName": ["محسن ربیعی"],
+        "jobTitle": "Film Director, Producer & Screenwriter",
+        "worksFor": {
+          "@id": "https://griffinpicture.github.io/griffinpicture/#organization"
+        },
+        "sameAs": [
+          "https://www.imdb.com/name/nm3860015/",
+          "https://www.instagram.com/mohsenrabiei_/",
+          "https://www.sinemalar.com/sanatci/668853/mohsen-rabiei"
+        ]
+      },
+      {
+        "@type": "MovieStudio",
+        "@id": "https://griffinpicture.github.io/griffinpicture/#organization",
+        "name": "Griffin Picture",
+        "alternateName": "گریفین پیکچر",
+        "url": "https://griffinpicture.github.io/griffinpicture/",
+        "founder": {
+          "@id": "https://griffinpicture.github.io/griffinpicture/#person"
+        },
+        "email": "griffinpictures.co@gmail.com"
+      },
+      {
+        "@type": "Movie",
+        "name": "I Just Want to Talk to My Mom",
+        "alternateName": "فقط می‌خوام با مامانم حرف بزنم",
+        "dateCreated": "2026",
+        "countryOfOrigin": ["IR", "TR"],
+        "description": "منتخب بخش اصلی مسابقه فستیوال بین‌المللی شب‌های سیاه تالین (Tallinn Black Nights - PÖFF)",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "As Long as There is Time",
+        "alternateName": "تا وقتی زمان هست",
+        "dateCreated": "2025",
+        "countryOfOrigin": "TR",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "Emma",
+        "alternateName": "امما",
+        "dateCreated": "2025",
+        "countryOfOrigin": "TR",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "The Day It Wasn't Cloudy",
+        "alternateName": "آن روز هوا ابری نبود",
+        "dateCreated": "2024",
+        "countryOfOrigin": ["TR", "IR"],
+        "description": "برنده جایزه بهترین کارگردانی از فستیوال هیفا هند، برنده بهترین فیلم، بهترین بازیگر مرد و بهترین بازیگر زن، منتخب فستیوال‌های بین‌المللی در آمریکا، ایتالیا، بنگلادش و تاجیکستان",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "Nirvana",
+        "alternateName": "نیروانا",
+        "dateCreated": "2023",
+        "countryOfOrigin": ["NO", "TR", "IR"],
+        "description": "پخش در Apple TV و Amazon Prime. برنده جایزه بهترین سناریو در ونکوور، بهترین فیلم در فستیوال رد پاریس، بهترین بازیگر مرد در آمستردام و حضور رسمی در جشنواره صربستان",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "The Forest",
+        "alternateName": "جنگل",
+        "dateCreated": "2020",
+        "countryOfOrigin": "TR",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "Kin",
+        "alternateName": "کین",
+        "dateCreated": "2019",
+        "countryOfOrigin": "TR",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "Running with the Night",
+        "alternateName": "دویدن با شب",
+        "dateCreated": "2015",
+        "countryOfOrigin": ["FR", "IR"],
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "The Retirees",
+        "alternateName": "بازنشسته‌ها",
+        "dateCreated": "2014",
+        "countryOfOrigin": "IR",
+        "description": "فیلم پرفروش سینمای ایران",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      },
+      {
+        "@type": "Movie",
+        "name": "About Life",
+        "alternateName": "درباره زندگی",
+        "dateCreated": "2010",
+        "countryOfOrigin": "IR",
+        "director": { "@id": "https://griffinpicture.github.io/griffinpicture/#person" },
+        "productionCompany": { "@id": "https://griffinpicture.github.io/griffinpicture/#organization" }
+      }
     ]
   }
   </script>
 
   <style>
     body {
-      font-family: Tahoma, Arial, sans-serif;
-      background-color: #0f0f11;
-      color: #f1f1f1;
-      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0c10;
+      color: #c5c6c7;
       margin: 0;
-      padding: 60px 20px;
+      padding: 50px 15px;
+      direction: rtl;
     }
-    .card {
-      max-width: 650px;
+    .main-box {
+      max-width: 850px;
       margin: 0 auto;
-      background: #1a1a1f;
+      background: #12141a;
       padding: 40px;
-      border-radius: 12px;
-      border: 1px solid #2a2a32;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border-radius: 16px;
+      border: 1px solid #1f232e;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7);
     }
-    h1 { color: #ffffff; margin-bottom: 10px; font-size: 28px; }
-    p { color: #a0a0aa; line-height: 1.8; font-size: 16px; }
-    .badge {
-      display: inline-block;
-      padding: 6px 14px;
-      background: #e50914;
+    .header-area { text-align: center; margin-bottom: 40px; }
+    h1 { color: #ffffff; font-size: 32px; margin: 0 0 8px 0; }
+    h2 { color: #e50914; font-size: 17px; margin: 0; font-weight: normal; }
+    .site-desc { color: #8892b0; margin-top: 10px; font-size: 14px; }
+
+    .category-title {
       color: #fff;
-      border-radius: 20px;
+      font-size: 21px;
+      border-bottom: 2px solid #e50914;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      margin-top: 40px;
+      text-align: right;
+    }
+    .film-card {
+      background: #181b24;
+      border-right: 5px solid #e50914;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      text-align: right;
+    }
+    .film-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .film-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .film-badge {
+      background: #232936;
+      color: #64ffda;
+      padding: 4px 10px;
+      border-radius: 6px;
       font-size: 13px;
-      margin-bottom: 20px;
+      font-family: sans-serif;
+      direction: ltr;
     }
-    .contact-info {
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #2a2a32;
+    .awards-box {
+      color: #ffd166;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-top: 8px;
+      background: rgba(255, 209, 102, 0.05);
+      padding: 10px 14px;
+      border-radius: 6px;
+      border-right: 3px solid #ffd166;
     }
-    .email-link {
-      color: #4da3ff;
+    .film-meta {
+      color: #8892b0;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .contact-area {
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid #1f232e;
+      text-align: center;
+    }
+    .contact-area a {
+      color: #64ffda;
       text-decoration: none;
       direction: ltr;
       display: inline-block;
-    }
-    .email-link:hover {
-      text-decoration: underline;
+      font-weight: bold;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <span class="badge">Official Film Production Studio</span>
-    <h1>Griffin Picture</h1>
-    <p>شرکت رسمی تولید فیلم، ویدئو و خدمات پساتولید سینمایی</p>
-    
-    <div class="contact-info">
-      <p>جهت همکاری و ارتباط با استودیو:</p>
-      <p>ایمیل: <a class="email-link" href="mailto:griffinpictures.co@gmail.com">griffinpictures.co@gmail.com</a></p>
+  <div class="main-box">
+    <div class="header-area">
+      <h1>Mohsen Rabiei | محسن ربیعی</h1>
+      <h2>کارگردان، نویسنده و تهیه‌کننده سینما | Griffin Picture</h2>
+      <p class="site-desc">وب‌سایت رسمی آثار و اطلاعات کمپانی فیلم‌سازی گریفین پیکچر</p>
+    </div>
+
+    <div class="category-title">فیلم‌شناسی و آثار سینمایی (Filmography)</div>
+
+    <!-- ۲۰۲۶ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">فقط می‌خوام با مامانم حرف بزنم (I Just Want to Talk to My Mom)</span>
+        <span class="film-badge">2026 | ایران و ترکیه</span>
+      </div>
+      <div class="awards-box">🏆 حضور و رقابت رسمی در بخش اصلی مسابقه فستیوال بین‌المللی تالین (Tallinn Black Nights - PÖFF)</div>
+    </div>
+
+    <!-- ۲۰۲۵ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">تا وقتی زمان هست (As Long as There is Time)</span>
+        <span class="film-badge">2025 | ترکیه</span>
+      </div>
+      <div class="film-meta">فیلم بلند داستانی | کارگردان: محسن ربیعی</div>
+    </div>
+
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">امما (Emma)</span>
+        <span class="film-badge">2025 | ترکیه</span>
+      </div>
+      <div class="film-meta">فیلم سینمایی داستانی | محصول استودیو Griffin Picture</div>
+    </div>
+
+    <!-- ۲۰۲۴ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">آن روز هوا ابری نبود (The Day It Wasn't Cloudy)</span>
+        <span class="film-badge">2024 | ترکیه و ایران</span>
+      </div>
+      <div class="awards-box">
+        🏆 برنده جایزه بهترین کارگردانی از فستیوال هیفا هند<br>
+        🏆 برنده بهترین فیلم، بهترین بازیگر مرد و بهترین بازیگر زن<br>
+        🎬 منتخب رسمی فستیوال‌های بین‌المللی در آمریکا، ایتالیا، بنگلادش و تاجیکستان
+      </div>
+    </div>
+
+    <!-- ۲۰۲۳ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">نیروانا (Nirvana)</span>
+        <span class="film-badge">2023 | نروژ، ترکیه و ایران</span>
+      </div>
+      <div class="awards-box">
+        🏆 برنده بهترین سناریو در ونکوور<br>
+        🏆 برنده بهترین فیلم در فستیوال رد پاریس (Festival Red)<br>
+        🏆 برنده بهترین بازیگر مرد در آمستردام<br>
+        🎬 حضور رسمی در جشنواره صربستان | پخش جهانی در Amazon Prime و Apple TV
+      </div>
+    </div>
+
+    <!-- ۲۰۲۰ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">جنگل (The Forest)</span>
+        <span class="film-badge">2020 | ترکیه</span>
+      </div>
+      <div class="film-meta">فیلم سینمایی بلند داستانی</div>
+    </div>
+
+    <!-- ۲۰۱۹ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">کین (Kin)</span>
+        <span class="film-badge">2019 | ترکیه</span>
+      </div>
+      <div class="film-meta">فیلم سینمایی داستانی | کارگردان و نویسنده: محسن ربیعی</div>
+    </div>
+
+    <!-- ۲۰۱۵ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">دویدن با شب (Running with the Night)</span>
+        <span class="film-badge">2015 | فرانسه و ایران</span>
+      </div>
+      <div class="film-meta">پروژه مشترک بین‌المللی سینمای فرانسه و ایران</div>
+    </div>
+
+    <!-- ۲۰۱۴ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">بازنشسته‌ها (The Retirees)</span>
+        <span class="film-badge">2014 | ایران</span>
+      </div>
+      <div class="awards-box">🎬 از پرمخاطب‌ترین و پرفروش‌ترین آثار سینمای ایران</div>
+    </div>
+
+    <!-- ۲۰۱۰ -->
+    <div class="film-card">
+      <div class="film-top">
+        <span class="film-name">درباره زندگی (About Life)</span>
+        <span class="film-badge">2010 | ایران</span>
+      </div>
+      <div class="film-meta">فیلم سینمایی داستانی</div>
+    </div>
+
+    <div class="contact-area">
+      <p style="color: #8892b0; margin-bottom: 6px;">راه‌های ارتباط با استودیو و پخش بین‌الملل:</p>
+      <a href="mailto:griffinpictures.co@gmail.com">griffinpictures.co@gmail.com</a>
     </div>
   </div>
 </body>
